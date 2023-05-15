@@ -1,0 +1,6 @@
+fastapi==0.92.0
+gradio==3.18.0
+numpy==1.23.5
+opencv_python
+scipy
+openmim

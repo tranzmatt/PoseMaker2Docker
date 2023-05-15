@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  posemaker2:
+    build:
+      dockerfile: Dockerfile.gpu
+      context: .
+    runtime: nvidia
+    restart: on-failure
+    tty: true
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - PYTHONUNBUFFERED=1
+    shm_size: '1gb'
+    ports:
+      - "8860:7860"

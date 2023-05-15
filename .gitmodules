@@ -1,0 +1,3 @@
+[submodule "PoseMaker2"]
+	path = PoseMaker2
+	url = https://huggingface.co/spaces/jonigata/PoseMaker2
